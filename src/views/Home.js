@@ -1,5 +1,7 @@
 import { header } from '../components/header/index.js';
 import { footer } from "../components/footer/index.js"
+import { renderItems } from "../components/cards/index.js"
+
 import data from '../data/dataset.js';
 
 export const Home = () => {
@@ -42,31 +44,6 @@ export const Home = () => {
 
   rootElements.insertAdjacentElement('beforebegin', filtersEl);
 
-  const renderItems = (data) => {
-    const cards = document.createElement('ul'); 
-    cards.classList.add('container'); 
-    data.forEach((item) => {
-      cards.innerHTML += ` 
-      <li itemscope itemtype="autorasEmFoco" class="detalhesDosLivros">
-        <dl>
-          <dt><img src=${item.imageUrl} alt="Capa do Livro" /></dt>
-          <dd itemprop="livro" class="livro_name">${item.name}</dd>
-          <dd itemprop="autora" class="autora_name">${item.facts.autoraLivro}</dd>
-          <dd itemprop="ordem">Gênero: ${item.facts.generoLivro}</dd> 
-          <dd itemprop="numeroDePaginas">Páginas: ${item.facts.numeroDePaginas}</dd>
-          <dd itemprop="preco">Preço: ${item.facts.precoMedio}</dd>
-          <details class="verMais">
-          <summary><strong>Ver +</strong></summary>
-          <ul>
-          <li> ${item.description}</li>
-          </ul>
-          </details>
-        </dl>
-      </li>
-      `;
-    })
-    return cards; 
-  };
 
   const cards = renderItems(data); 
   rootElements.appendChild(cards);

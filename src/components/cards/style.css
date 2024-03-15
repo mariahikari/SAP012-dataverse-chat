@@ -1,0 +1,84 @@
+
+
+.container img {
+    width: 200px;
+    /* Ajustado para todas as imagens terem a mesma largura */
+    height: 300px;
+    /* Ajustado para todas as imagens terem a mesma altura */
+    margin-bottom: 10px;
+    margin: 0 auto;
+    /* Centraliza a imagem horizontalmente */
+    display: block;
+    /* Remove espaçamento extra da imagem */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    /* Direção da linha */
+    flex-wrap: wrap;
+    border-radius: 10px;
+    padding: 1rem 1rem;
+
+}
+
+.livro_name {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    /* Incluido para centralizar o texto dentro do card */
+    margin-top: 10px;
+}
+
+.autora_name {
+    /*Classe adicionada para o nome da autora se destacar das demais infos*/
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.detalhesDosLivros {
+    background-color: #DBC980;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    width: 20%;
+    list-style: none;
+    /*incluido para todos os cards terem o mesmo tamanho*/
+    flex: 1;
+}
+
+dd {
+    font-size: 13px;
+    margin-bottom: 10px;
+    margin: 0px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.verMais {
+    margin-top: 10px;
+    color: white;
+}
+
+.verMais summary {
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.verMais ul {
+    padding: 0px;
+
+}
+
+.verMais li {
+    width: 100%;
+    padding: 0px;
+    margin: 2px;
+    text-align: justify;
+    list-style: none;
+
+}
