@@ -1,4 +1,5 @@
 import data from '../data/dataset.js';
+import { Footer } from "../footer/index.js"
 
 export const Home = () => {
   const headerEl = document.createElement("header");
@@ -55,10 +56,6 @@ export const Home = () => {
 
   </div>
 
-  <footer> 
-    <p>Desenvolvido por: Marcele Reis e Maria Hikari [SAP012]</p> 
-  </footer>
-    
     `;
     
 
@@ -94,7 +91,11 @@ export const Home = () => {
   const cards = renderItems(data); 
   rootElements.appendChild(cards);
 
+  const footer = Footer();
+  rootElements.insertAdjacentElement("afterend", footer);
+
   return rootElements;
+  
 
 }
 
