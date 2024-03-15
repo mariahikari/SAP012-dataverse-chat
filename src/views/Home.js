@@ -1,6 +1,7 @@
 import { header } from '../Comp-Header/index.js';
 import { footer } from "../footer/index.js"
 import data from '../data/dataset.js';
+import { Footer } from "../footer/index.js"
 
 export const Home = () => {
   const rootElements = document.getElementById("root");
@@ -74,6 +75,7 @@ export const Home = () => {
   rootElements.insertAdjacentElement("afterend", footer);
 
   return rootElements;
+  
 
 }
 
