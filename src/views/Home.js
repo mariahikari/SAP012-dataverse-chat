@@ -1,7 +1,6 @@
-import { header } from '../Comp-Header/index.js';
-import { footer } from "../footer/index.js"
+import { header } from '../components/header/index.js';
+import { footer } from "../components/footer/index.js"
 import data from '../data/dataset.js';
-import { Footer } from "../footer/index.js"
 
 export const Home = () => {
   const rootElements = document.getElementById("root");
@@ -72,7 +71,8 @@ export const Home = () => {
   const cards = renderItems(data); 
   rootElements.appendChild(cards);
 
-  rootElements.insertAdjacentElement("afterend", footer);
+  rootElements.insertAdjacentElement("afterend", footer());
+
 
   return rootElements;
   
