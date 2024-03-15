@@ -1,7 +1,7 @@
 import loadStyle from "../../styleLoader.js";
 
 export const header = () => {
-  loadStyle('./header/style.css'); 
+  loadStyle('./components/header/style.css'); 
   const headerEl = document.createElement("header");
   headerEl.innerHTML = `
     <img src="./images/Hands.png" class="headerPng" />
