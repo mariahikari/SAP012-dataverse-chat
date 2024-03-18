@@ -5,15 +5,6 @@ h1,
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* resolvido erro no teste > incluido o footer */
-
-
-main {
-    background-color: #92C195;
-    font-size: 12px;
-    color: white;
-}
-
 .mensagem-sem-resultado {
     background-color: #EFDDE1;
     font-weight: bold;
@@ -32,11 +23,10 @@ main {
 
 .filtros {
     display: flex;
-    /* Usa o layout flexível */
     justify-content: space-between;
-    /* Distribui os itens uniformemente */
     align-items: center;
     margin-left: 10px;
+    background-color: #92C195;
 }
 
 h2 {
@@ -49,7 +39,6 @@ label {
 
 select {
     flex: 1;
-    /* Ocupa o mesmo espaço disponível */
     margin-right: 10px;
     cursor: pointer;
 }
@@ -57,12 +46,9 @@ select {
 #resetButton {
     background-color: #DBC980;
     display: block;
-    /* Torna o botão um bloco */
     margin: 10px auto;
-    /* Centraliza horizontalmente com margens */
     padding-top: 8px;
     padding-bottom: 8px;
-    /* ajustar isso depois. limpar mais o código */
     padding-right: 80px;
     padding-left: 80px;
     border-radius: 10px;
