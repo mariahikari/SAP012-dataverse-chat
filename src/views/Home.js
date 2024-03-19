@@ -13,10 +13,6 @@ export const Home = () => {
   const filtersEl = filters();
   rootElements.insertAdjacentElement('beforebegin', filtersEl);
 
-
-  const cards = renderItems(data); 
-  rootElements.appendChild(cards);
-
   rootElements.insertAdjacentElement("afterend", footer());
 
 
