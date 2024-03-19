@@ -1,6 +1,6 @@
 import loadStyle from "../../styleLoader.js";
-import { filterData, sortData, computeStats } from "../../lib/dataFunctions.js"
-import { renderItems } from "../cards/index.js"
+import { filterData, sortData, computeStats } from "../../lib/dataFunctions.js";
+import { renderItems } from "../cards/index.js";
 import data from '../../data/dataset.js';
 
 export const filters = () => {
@@ -43,14 +43,13 @@ export const filters = () => {
 
     `;
   
-
-  const filtroGenero = document.querySelector('#filtroGenero');
-  const filtroPreco = document.querySelector('#filtroPreco');
-  const ordenarPor = document.querySelector('#ordenarPor');
-  const resetButton = document.querySelector('#resetButton');
-  const cardsLivros = document.querySelector('#root');
-  const quantidadeDeLivros = document.querySelector('#quantidadeDeLivros');
-
+  // Agora, selecione os elementos HTML após adicionar o filtersEl ao DOM
+  const filtroGenero = filtersEl.querySelector('#filtroGenero');
+  const filtroPreco = filtersEl.querySelector('#filtroPreco');
+  const ordenarPor = filtersEl.querySelector('#ordenarPor');
+  const resetButton = filtersEl.querySelector('#resetButton');
+  const cardsLivros = filtersEl.querySelector('#root');
+  const quantidadeDeLivros = filtersEl.querySelector('#quantidadeDeLivros');
 
   const renderizarLivros = (dados) => {
     cardsLivros.innerHTML = '';
@@ -66,13 +65,10 @@ export const filters = () => {
 
   };
 
-
   const filtrarEOrdenarLivros = () => {
-
     const generoSelecionado = filtroGenero.value;
     const precoSelecionado = filtroPreco.value;
     const ordenacaoSelecionada = ordenarPor.value;
-
 
     let dadosFiltrados = data;
     if (generoSelecionado !== 'todos') {
@@ -91,29 +87,18 @@ export const filters = () => {
     quantidadeDeLivros.textContent = `Exibindo ${totalLivros} livro(s)`;
   };
 
-
   renderizarLivros(data);
 
   filtroGenero.addEventListener('change', () => filtrarEOrdenarLivros());
-
   filtroPreco.addEventListener('change', () => filtrarEOrdenarLivros());
-
   ordenarPor.addEventListener('change', () => filtrarEOrdenarLivros());
-
-
-  resetButton.addEventListener('click', (event) => {
+  resetButton.addEventListener('click', () => {
     filtroGenero.value = 'todos';
     filtroPreco.value = 'todos';
     ordenarPor.value = 'asc';
     quantidadeDeLivros.textContent = '';
-
     renderizarLivros(data);
   });
 
-  return filtersEl
-
+  return filtersEl;
 };
-
-
-
-
