@@ -1,0 +1,60 @@
+body,
+h1,
+#root {
+    background-color: #EFDDE1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mensagem-sem-resultado {
+    background-color: #EFDDE1;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: #704E4E;
+    padding: 80px;
+}
+
+#quantidadeDeLivros {
+    font-size: 18px;
+    margin: 20px;
+    text-align: center;
+
+}
+
+.filtros {
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    background-color: #92C195;
+    color: white;
+}
+
+h2 {
+    margin-right: 10px;
+}
+
+label {
+    font-size: 13px;
+}
+
+select {
+    flex: 1;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#resetButton {
+    background-color: #DBC980;
+    margin: 10px auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 80px;
+    padding-left: 80px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
