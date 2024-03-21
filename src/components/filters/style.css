@@ -24,17 +24,21 @@ h1,
 .filtros {
     justify-content: space-between;
     align-items: center;
-    margin-left: 10px;
     background-color: #92C195;
     color: white;
 }
 
 h2 {
     margin-right: 10px;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-left: 15px;
+    margin-bottom: 0px;
 }
 
 label {
     font-size: 13px;
+    padding-left: 15px;
 }
 
 select {
@@ -51,7 +55,6 @@ select {
     padding-right: 80px;
     padding-left: 80px;
     border-radius: 10px;
-    margin-bottom: 20px;
     border: 0;
     color: white;
     font-weight: bold;
