@@ -1,5 +1,5 @@
 
-// src/lib/apiKey.js - IMPORTAR NO MODAL/INDEX.JS
+// src/lib/apiKey.js - AJUSTAR O MODAL/INDEX.JS
 
 export const getApiKey = () => {
     // Implementa el código para obtener la API KEY desde Local Storage
