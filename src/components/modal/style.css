@@ -1,0 +1,62 @@
+
+.modal {
+    display: none; /* Oculta por padrão */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.modal-content {
+    background-color: #DBC980;
+    margin: 10% auto; /* Ajuste para centralizar na tela */
+    border: 1px solid #DBC980;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
+}
+#input-modal {
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+#btn-modal {
+    background-color: #92C195;
+    margin: 10px auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 80px;
+    padding-left: 80px;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close {
+    color: #704E4E;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
