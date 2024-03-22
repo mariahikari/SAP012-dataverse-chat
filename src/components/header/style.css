@@ -27,3 +27,49 @@ header p {
     margin-bottom: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+header ul {
+    margin-top: 0;
+    background-color: #704E4E;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style-type: none; 
+    color: white;
+}
+
+.btn {
+    background-color: #704E4E;
+    margin: 10px auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btnKey {
+    background-color: #704E4E;
+    margin: 10px auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #DBC980;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/*css do modal abaixo */ 
+

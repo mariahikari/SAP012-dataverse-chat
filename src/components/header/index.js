@@ -1,3 +1,4 @@
+import { modal } from "../modal/index.js";
 import loadStyle from "../../styleLoader.js";
 
 export const header = () => {
@@ -9,17 +10,20 @@ export const header = () => {
     <p>Conecte-se e celebre histórias escritas por mulheres extraordinárias</p> 
     <nav>
       <ul>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/Chat">Chat</a>
-        </li>
+        <button class="btn" onclick="window.location.href='/'">Home</button>
+        <button class="btn" onclick="window.location.href='/Chat'">Chat</button>
+        <button class="btnKey" id="openModalBtn">API KEY</button>
       </ul>
     </nav>
     `;
-    
+
+  // Adicionando evento de clique ao botão "API KEY" para abrir o modal
+  const openModalBtn = headerEl.querySelector("#openModalBtn");
+  openModalBtn.addEventListener("click", () => {
+    const open = modal(); // Criar o modal
+    document.body.appendChild(open); // Adicionar o modal ao corpo do documento
+    openModal(); // Abrir o modal
+  });
+
   return headerEl;
-
 }
-
