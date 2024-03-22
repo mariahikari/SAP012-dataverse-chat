@@ -1,7 +1,7 @@
 import loadStyle from "../../styleLoader.js";
 
 export const modal = () => {
-    loadStyle("./components/filters/style.css");
+    loadStyle("./components/modal/style.css");
     const modalEl = document.createElement("div");
     modalEl.innerHTML = `
 <div id="myModal" class="modal">
@@ -28,3 +28,4 @@ window.openModal = function openModal() {
 
   return modalEl;
 }
+

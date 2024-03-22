@@ -12,16 +12,18 @@ export const header = () => {
       <ul>
         <button class="btn" onclick="window.location.href='/'">Home</button>
         <button class="btn" onclick="window.location.href='/Chat'">Chat</button>
-        <button class="btnKey" onclick="openModal()">API KEY</button>
+        <button class="btnKey" id="openModalBtn">API KEY</button>
       </ul>
     </nav>
     `;
 
-    document.addEventListener("DOMContentLoaded", () => {
-    const openModalBtn = headerEl.querySelector("openModalBtn");
-    openModalBtn.addEventListener("click", () => {
-      openModal();
-    });
+  // Adicionando evento de clique ao botão "API KEY" para abrir o modal
+  const openModalBtn = headerEl.querySelector("#openModalBtn");
+  openModalBtn.addEventListener("click", () => {
+    const open = modal(); // Criar o modal
+    document.body.appendChild(open); // Adicionar o modal ao corpo do documento
+    openModal(); // Abrir o modal
   });
+
   return headerEl;
 }
