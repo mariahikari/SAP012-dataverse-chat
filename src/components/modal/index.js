@@ -1,10 +1,10 @@
-// import { getApiKey, setApiKey } from "../../lib/apiKey.js";
+import { getApiKey, setApiKey } from "../../lib/apiKey.js";
 import loadStyle from "../../styleLoader.js";
 
 export const modal = () => {
-    loadStyle("./components/modal/style.css");
-    const modalEl = document.createElement("div");
-    modalEl.innerHTML = `
+  loadStyle("./components/modal/style.css");
+  const modalEl = document.createElement("div");
+  modalEl.innerHTML = `
 <div id="myModal" class="modal">
 <div class="modal-content">
   <span class="close" onclick="closeModal()">x</span>
@@ -17,11 +17,11 @@ export const modal = () => {
 </div>
 `;
 
-// Função para abrir o modal
-window.openModal = function openModal() {
+  // Função para abrir o modal
+  window.openModal = function openModal() {
     document.getElementById("myModal").style.display = "block";
   }
-  
+
   // Função para fechar o modal
   window.closeModal = function closeModal() {
     document.getElementById("myModal").style.display = "none";

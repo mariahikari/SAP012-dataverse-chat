@@ -7,8 +7,8 @@ import { setRootEl, setRoutes, onURLChange } from './router.js';
 //Ejemplo de definición de rutas:
 
 const routes = {
-    "/": Home,
-    "/Chat": Chat
+  "/": Home,
+  "/Chat": Chat
 }
 
 setRoutes(routes);

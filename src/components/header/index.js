@@ -2,7 +2,7 @@ import { modal } from "../modal/index.js";
 import loadStyle from "../../styleLoader.js";
 
 export const header = () => {
-  loadStyle('./components/header/style.css'); 
+  loadStyle('./components/header/style.css');
   const headerEl = document.createElement("header");
   headerEl.innerHTML = `
     <img src="./images/Hands.png" class="headerPng" />
