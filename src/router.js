@@ -10,34 +10,34 @@ let ROUTES = {};
 let rootEl = null;
 
 export const setRootEl = (el) => {
-    rootEl = el; // assign rootEl
+  rootEl = el; // assign rootEl
 }
 
 export const setRoutes = (routes) => {
   // optional Throw errors if routes isn't an object:   
-    //if (typeof routes !== 'object') {
-    //throw new Error('Routes must be an object.');
-    //}
+  //if (typeof routes !== 'object') {
+  //throw new Error('Routes must be an object.');
+  //}
 
   // optional Throw errors if routes doesn't define an /error route
-    //if (!routes['/error']) {
-    //throw new Error('Routes must define an /error route.');
-    //}
+  //if (!routes['/error']) {
+  //throw new Error('Routes must define an /error route.');
+  //}
 
   ROUTES = routes;// assign ROUTES
 }
 
 const queryStringToObject = (queryString) =>
   Object.fromEntries(new URLSearchParams(queryString).entries());
-  
-const renderView = (pathName, props={}) => {
+
+const renderView = (pathName, props = {}) => {
   // if (!(pathName in routes)) { 
   //   pathName = ERROR_PATH;
   // }
   rootEl.innerHTML = "";
   const viewEl = ROUTES[pathName](props);
   rootEl.appendChild(viewEl);
-} 
+}
 
 export const onURLChange = () => {
   const { pathname, searchParams } = window.location;// Analisa a localização para obter o pathname e os parâmetros de pesquisa

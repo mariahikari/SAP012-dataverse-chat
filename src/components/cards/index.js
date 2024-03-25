@@ -2,11 +2,11 @@ import loadStyle from "../../styleLoader.js";
 
 
 export const renderItems = (data) => {
-    loadStyle("./components/cards/style.css");
+  loadStyle("./components/cards/style.css");
 
-    const cards = document.createElement('ul'); 
-    cards.classList.add('container'); 
-    data.forEach((item) => {
+  const cards = document.createElement('ul');
+  cards.classList.add('container');
+  data.forEach((item) => {
     cards.innerHTML += ` 
     <li itemscope itemtype="autorasEmFoco" class="detalhesDosLivros">
         <dl>
@@ -25,6 +25,6 @@ export const renderItems = (data) => {
         </dl>
     </li>
     `;
-    })
-    return cards; 
+  })
+  return cards;
 };
