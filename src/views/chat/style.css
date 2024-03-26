@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+}
+
+.book-list {
+    border: 1px solid black;
+    width: 30%;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.book-chat {
+    border: 1px solid black;
+    width: 70%;
+    border-radius: 10px;
+}
