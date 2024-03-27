@@ -4,13 +4,49 @@
 
 .book-list {
     border: 1px solid black;
-    width: 30%;
+    width: 25%;
+    height: 600px;
     margin-right: 20px;
     border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    overflow-y: auto;
 }
 
 .book-chat {
     border: 1px solid black;
     width: 70%;
     border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+img {
+    width: 100px;
+}
+
+li { 
+    display: flex;
+    list-style-type: none; 
+    border: 1px solid black;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+h1
+{
+    padding-left: 15px;
+}
+
+.book-titulo {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold;
 }

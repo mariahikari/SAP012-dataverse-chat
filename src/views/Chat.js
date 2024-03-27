@@ -5,56 +5,51 @@ import { footer } from "../components/footer/index.js";
 
 
 export const Chat = () => {
-  const el = document.createElement('div');
-  const rootElements = document.getElementById("root");
-  
-  loadStyle("./views/chat/style.css")
-  
-  el.innerHTML = `
-      <div class="container">
-          <div class="book-list">
-          <h2>Livros</h2>
-          <ul id="bookList">
+const el = document.createElement('div');
+const rootElements = document.getElementById("root");
 
-          </ul>
-          </div>
+loadStyle("./views/chat/style.css")
 
-          <div class="book-chat">
-              <div id="conversation">
-                  <p>Clique em um livro para começar a conversar</p>
-              </div>
+el.innerHTML = `
+    <div class="container">
+        <div class="book-list">
+        <h1>Livros</h1>
+        <ul id="bookList">
 
-              <div>
-                  <input type="text" id="message" placeholder="Digite sua mensagem">
-                  <button>Enviar</button>
-              </div>
-          </div>
-      </div>
-  `;
+        </ul>
+        </div>
 
-  rootElements.insertAdjacentElement("beforebegin", header());
-  rootElements.insertAdjacentElement("afterend", footer());
+        <div class="book-chat">
+            <div id="conversation">
+                <p>Clique em um livro para começar a conversar</p>
+            </div>
 
- const renderChat = (data) => {
+            <div>
+                <input type="text" id="message" placeholder="Digite sua mensagem">
+                <button>Enviar</button>
+            </div>
+        </div>
+    </div>
+`;
+
+rootElements.insertAdjacentElement("beforebegin", header());
+rootElements.insertAdjacentElement("afterend", footer());
+
+const renderChat = (data) => {
     const bookList =el.querySelector('#bookList');
     data.forEach((item) => {
-      const bookChat = document.createElement("li");
-      bookChat.innerHTML += ` 
-          <img src=${item.imageUrl} alt="Capa do Livro"/>
-          <p>${item.name}</p>
-      `;
-      bookList.appendChild(bookChat);
+    const bookChat = document.createElement("li");
+    bookChat.innerHTML += ` 
+        <img src=${item.imageUrl} alt="Capa do Livro"/>
+        <p class="book-titulo">${item.name}</p>
+    `;
+    bookList.appendChild(bookChat);
     });
-  };
-  
-  renderChat(data);
+};
 
-  return el;
+renderChat(data);
 
-  }
+return el;
 
- 
+}
 
-
-
-  
