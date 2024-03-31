@@ -27,6 +27,14 @@ export const modal = () => {
     document.getElementById("myModal").style.display = "none";
   }
 
+    // Adicionando evento de clique ao botão "SALVAR"
+    const saveApiKeyBtn = modalEl.querySelector('#btn-modal');
+    saveApiKeyBtn.addEventListener('click', () => {
+      const apiKeyInput = document.getElementById('input-modal').value;
+      setApiKey(apiKeyInput); // Armazenar a chave inserida no Local Storage
+      closeModal(); // Fechar o modal após salvar a chave
+    });
+  
   return modalEl;
 }
 
