@@ -1,10 +1,16 @@
 import loadStyle from "../../styleLoader.js";
-// import { communicateWithOpenAI } from "../../lib/openAIApi.js";
+import { getApiKey } from "../lib/apiKey.js";
+import { communicateWithOpenAI } from "../../lib/openAIApi.js";
 import data from "../data/dataset.js";
 import { header } from '../components/header/index.js';
 import { footer } from "../components/footer/index.js";
 
-export const Chat = () => {
+export const Chat = () => { 
+    communicateWithOpenAI([
+        "Você é o livro O Conto de Aia",
+        "Quantas páginas você tem?"
+    ]);
+
     const el = document.createElement('div');
     const rootElements = document.getElementById("root");
 
