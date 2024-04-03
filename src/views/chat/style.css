@@ -1,9 +1,14 @@
+body {
+    background-color: #EFDDE1; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .container {
     display: flex;
 }
 
 .book-list {
-    border: 1px solid black;
+    border: 0;
     width: 25%;
     height: 600px;
     margin-right: 20px;
@@ -12,15 +17,22 @@
     margin-left: 20px;
     margin-bottom: 40px;
     overflow-y: auto;
+    background-color: white;
 }
 
 .book-chat {
-    border: 1px solid black;
+    border: 0;
     width: 70%;
     border-radius: 10px;
     margin-top: 40px;
     margin-bottom: 40px;
     margin-right: 20px;
+    background-color: white;
+}
+
+#conversation {
+    max-height: 500px;
+    overflow-y: auto;
 }
 
 img {
@@ -30,10 +42,11 @@ img {
 li { 
     display: flex;
     list-style-type: none; 
-    border: 1px solid black;
+    border: 1px solid #D9D9D9;
     padding-left: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
+    cursor: pointer;
 }
 
 ul {
@@ -49,4 +62,59 @@ h1
     padding-left: 15px;
     padding-right: 15px;
     font-weight: bold;
+}
+
+.initial_message,
+.book_start {
+    padding-left: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#message {
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#sendMessageBtn {
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 0;
+    background-color: #92C195;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    
+}
+
+.caixa_de_texto {
+    padding-left: 20px;
+    padding-right: 20px
+}
+
+.book-answer {
+    background-color: #DBC980;
+    padding: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-top-left-radius: 15px; /* Arredonda o canto superior esquerdo */
+    border-top-right-radius: 15px; /* Arredonda o canto superior direito */
+    border-bottom-right-radius: 15px; /* Arredonda o canto inferior direito */
+}
+
+.user-answer {
+    background-color: #D9D9D9;
+    padding: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-top-left-radius: 15px; /* Arredonda o canto superior esquerdo */
+    border-top-right-radius: 15px; /* Arredonda o canto superior direito */
+    border-bottom-left-radius: 15px; /* Arredonda o canto inferior direito */
 }
