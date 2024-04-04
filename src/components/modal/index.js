@@ -20,21 +20,20 @@ export const modal = () => {
   // Função para abrir o modal
   window.openModal = function openModal() {
     document.getElementById("myModal").style.display = "block";
-  }
+  };
 
   // Função para fechar o modal
   window.closeModal = function closeModal() {
     document.getElementById("myModal").style.display = "none";
-  }
+  };
 
-    // Adicionando evento de clique ao botão "SALVAR"
-    const saveApiKeyBtn = modalEl.querySelector('#btn-modal');
-    saveApiKeyBtn.addEventListener('click', () => {
-      const apiKeyInput = document.getElementById('input-modal').value;
-      setApiKey(apiKeyInput); // Armazenar a chave inserida no Local Storage
-     closeModal(); // Fechar o modal após salvar a chave
-    });
-  
+  // Adicionando evento de clique ao botão "SALVAR"
+  const saveApiKeyBtn = modalEl.querySelector("#btn-modal");
+  saveApiKeyBtn.addEventListener("click", () => {
+    const apiKeyInput = document.getElementById("input-modal").value;
+    setApiKey(apiKeyInput); // Armazenar a chave inserida no Local Storage
+    closeModal(); // Fechar o modal após salvar a chave
+  });
+
   return modalEl;
-}
-
+};
