@@ -77,9 +77,11 @@ export const Chat = () => {
             botMessage.classList.add("book-answer");
             conversationArea.appendChild(botMessage);
             conversationArea.scrollTop = conversationArea.scrollHeight; // Rolando para o final da conversa
-           
+
           } 
-        } 
+        } else {
+          throw Error(response)
+        }
       } catch (error) {
         console.error("Erro ao comunicar com a API do OpenAI:", error);
       }

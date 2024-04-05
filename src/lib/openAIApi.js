@@ -3,6 +3,8 @@ import { getApiKey } from "./apiKey.js";
 const OPENAI_API_KEY = getApiKey();
 
 export const communicateWithOpenAI = async (bookName, userMessage) => {
+  console.log(OPENAI_API_KEY)
+  
   const resposta = await fetch("https://api.openai.com/v1/chat/completions", {
     method: "POST",
     body: JSON.stringify({
