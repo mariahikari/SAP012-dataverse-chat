@@ -2,7 +2,7 @@
 
 
 import { Home } from './views/Home.js';
-import { Chat } from './views/Chat.js';
+import { Chat } from './views/chat/index.js';
 import { setRootEl, setRoutes, onURLChange } from './router.js';
 //Ejemplo de definición de rutas:
 
