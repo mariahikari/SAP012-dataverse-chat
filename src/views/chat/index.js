@@ -1,8 +1,8 @@
 import loadStyle from "../../styleLoader.js";
 import { communicateWithOpenAI } from "../../lib/openAIApi.js";
-import data from "../data/dataset.js";
-import { header } from "../components/header/index.js";
-import { footer } from "../components/footer/index.js";
+import data from "../../data/dataset.js";
+import { header } from "../../components/header/index.js";
+import { footer } from "../../components/footer/index.js";
 
 let bookName = ""; // Variável para armazenar o nome do livro selecionado
 
