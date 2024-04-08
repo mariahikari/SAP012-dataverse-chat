@@ -1,6 +1,10 @@
 import { modal } from "../modal/index.js";
 import loadStyle from "../../styleLoader.js";
 
+window.openModal = function openModal() {
+  document.getElementById("myModal").style.display = "block";
+};
+
 export const header = () => {
   loadStyle('./components/header/style.css');
   const headerEl = document.createElement("header");
@@ -22,7 +26,7 @@ export const header = () => {
   openModalBtn.addEventListener("click", () => {
     const open = modal(); // Criar o modal
     document.body.appendChild(open); // Adicionar o modal ao corpo do documento
-    openModal(); // Abrir o modal
+    window.openModal(); // Abrir o modal
   });
 
   return headerEl;

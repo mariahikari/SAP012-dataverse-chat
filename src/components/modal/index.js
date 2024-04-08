@@ -17,10 +17,7 @@ export const modal = () => {
 </div>
 `;
 
-  // Função para abrir o modal
-  window.openModal = function openModal() {
-    document.getElementById("myModal").style.display = "block";
-  };
+
 
   // Função para fechar o modal
   window.closeModal = function closeModal() {
@@ -32,7 +29,7 @@ export const modal = () => {
   saveApiKeyBtn.addEventListener("click", () => {
     const apiKeyInput = document.getElementById("input-modal").value;
     setApiKey(apiKeyInput); // Armazenar a chave inserida no Local Storage
-    closeModal(); // Fechar o modal após salvar a chave
+    window.closeModal(); // Fechar o modal após salvar a chave
   });
 
   return modalEl;
