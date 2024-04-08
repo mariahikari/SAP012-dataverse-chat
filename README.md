@@ -1,10 +1,10 @@
 <h1>
     <a href="https://www.laboratoria.la/br">
      <img align="center" width="40px" src="https://v.fastcdn.co/u/cf943cfe/52655001-0-Laboratoria-RGB-isot.png"></a>
-    <span>Projeto 02 - Dataverse</span>
+    <span>Projeto 03 - Dataverse Chat</span>
 </h1> 
 
-![Status](https://img.shields.io/static/v1?label=Status&message=CONCLU%C3%8DDO&color=%3CCOLOR%3E&style=%3CSTYLE%3E&logo=%3CLOGO%3E) ![Date](https://img.shields.io/badge/Release_date-FEVEREIRO-yellow)
+![Status](https://img.shields.io/static/v1?label=Status&message=CONCLU%C3%8DDO&color=%3CCOLOR%3E&style=%3CSTYLE%3E&logo=%3CLOGO%3E) ![Date](https://img.shields.io/badge/Release_date-ABRIL-yellow)
 
 <img src="https://i.imgur.com/BVQmFCk.png">
 
@@ -78,13 +78,6 @@ A aplicação deverá:
 - permitir que o usuário interaja com os livros através de um chat - Esta funcionalidade deve ser carregada na URL /panel;
 - possibilitar que o usuário possa digitar sua pergunta ou mensagem para o livro em uma caixa de texto e enviá-la com um botão;
 - adaptar a mensagem do usuário para cada livro, com o objetivo de gerar uma resposta com base em sua personalidade/gênero e conhecimento;
-
-
-
-PENDENTE:
-- Ao clicar em um card de personagem/entidade, a aplicação deve redirecionar para uma visualização com sua própria URL que mostre informações detalhadas sobre aquele personagem/entidade em particular.
-- As respostas de todos os personagens são exibidas de acordo com a ordem de resposta.
-- Indicar visualmente quando um ou vários personagens/entidades estiverem gerando uma resposta à mensagem enviada
 - A aplicação deve informar à usuária sobre os erros que possam surgir ao interagir com a API, como atingir a cota de tokens por minuto ou qualquer outro erro relacionado à API. Deve ser fornecida uma descrição clara da causa do problema e possíveis soluções.
 
 ![img](./src/data/assets/gif.gif) //SUBSTITUIR PELO GIF DO CHAT
