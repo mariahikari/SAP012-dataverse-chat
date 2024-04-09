@@ -87,6 +87,12 @@ export const Chat = () => {
       messageText.classList.add("user-answer");
       messageText.textContent = message;
       userMessage.appendChild(messageText);
+      
+      // Adicionando mensagem de "digitando..."
+      const typingMessage = document.createElement("p");
+      typingMessage.classList.add("typing-message");
+      typingMessage.textContent = `${bookName} está digitando...`;
+      conversationArea.appendChild(typingMessage);
 
       conversationArea.appendChild(userMessage);
       messageInput.value = "";
@@ -97,6 +103,9 @@ export const Chat = () => {
         if (response && response.choices && response.choices.length > 0) {
           const botMessageText = response.choices[0].message.content;
           if (botMessageText) {
+            // Removendo mensagem de "digitando..."
+            conversationArea.removeChild(typingMessage);
+
             const botMessage = document.createElement("div");
             botMessage.classList.add("message", "messageBotContainer");
 
