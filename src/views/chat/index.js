@@ -94,6 +94,11 @@ export const Chat = () => {
       typingMessage.textContent = `${bookName} está digitando...`;
       conversationArea.appendChild(typingMessage);
 
+      // Remove após 5 segundos
+      setTimeout(() => {
+        conversationArea.removeChild(typingMessage);
+      }, 5000);
+
       conversationArea.appendChild(userMessage);
       messageInput.value = "";
 

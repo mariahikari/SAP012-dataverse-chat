@@ -37,7 +37,7 @@ body {
 
 .typingMessage {
     position: absolute;
-    padding: 20px 12px 0px 900px; /* Ajuste conforme necessário para posicionamento */
+    padding: 20px; 
   
     width: 100%;
     text-align: start;
