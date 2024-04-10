@@ -35,6 +35,15 @@ body {
     overflow-y: auto;
 }
 
+.typingMessage {
+    position: absolute;
+    padding: 20px 12px 0px 900px; /* Ajuste conforme necessário para posicionamento */
+  
+    width: 100%;
+    text-align: start;
+    margin-top: 85px;
+  }
+  
 img {
     width: 100px;
 }
@@ -117,7 +126,7 @@ h1
     height: 100px; /* Define a altura da imagem do livro */
     border-radius: 10px; /* Adiciona uma borda arredondada à imagem do livro */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra à imagem do livro */
-    margin-right: 66px;
+    margin-right: 140px;
 }
 
 /* Estilo da imagem do livro */

@@ -90,7 +90,7 @@ export const Chat = () => {
       
       // Adicionando mensagem de "digitando..."
       const typingMessage = document.createElement("p");
-      typingMessage.classList.add("typing-message");
+      typingMessage.classList.add("typingMessage");
       typingMessage.textContent = `${bookName} está digitando...`;
       conversationArea.appendChild(typingMessage);
 
@@ -126,9 +126,13 @@ export const Chat = () => {
           }
         } else {
           throw Error(response);
+          
         }
       } catch (error) {
+        // Removendo mensagem de "digitando..."
+        conversationArea.removeChild(typingMessage);
         console.error("Erro ao comunicar com a API do OpenAI:", error);
+        
       }
     }
   };
