@@ -87,6 +87,17 @@ export const Chat = () => {
       messageText.classList.add("user-answer");
       messageText.textContent = message;
       userMessage.appendChild(messageText);
+      
+      // Adicionando mensagem de "digitando..."
+      const typingMessage = document.createElement("p");
+      typingMessage.classList.add("typingMessage");
+      typingMessage.textContent = `${bookName} está digitando...`;
+      conversationArea.appendChild(typingMessage);
+
+      // Remove após 5 segundos
+      setTimeout(() => {
+        conversationArea.removeChild(typingMessage);
+      }, 5000);
 
       conversationArea.appendChild(userMessage);
       messageInput.value = "";
@@ -97,6 +108,9 @@ export const Chat = () => {
         if (response && response.choices && response.choices.length > 0) {
           const botMessageText = response.choices[0].message.content;
           if (botMessageText) {
+            // Removendo mensagem de "digitando..."
+            conversationArea.removeChild(typingMessage);
+
             const botMessage = document.createElement("div");
             botMessage.classList.add("message", "messageBotContainer");
 
@@ -117,9 +131,13 @@ export const Chat = () => {
           }
         } else {
           throw Error(response);
+          
         }
       } catch (error) {
+        // Removendo mensagem de "digitando..."
+        conversationArea.removeChild(typingMessage);
         console.error("Erro ao comunicar com a API do OpenAI:", error);
+        
       }
     }
   };
