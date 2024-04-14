@@ -33,7 +33,7 @@ O projeto foi desenvolvido pela mesma dupla do [Dataverse](https://mariahikari.g
 #### Deploy
 A aplicação foi publicada (ou _deployed_) para que as usuárias da web possam acessá-la.
 
-Foi utilizado o _Github Pages_ para implantar o site: [Autoras em Foco](https://mariahikari.github.io/SAP012-dataverse-chat/). //Ajustar
+Foi utilizado o _Netlify_ para implantar o site: [Autoras em Foco](https://autoras-em-foco.netlify.app). 
 
 ## 2. Ferramentas utilizadas
 
@@ -80,13 +80,13 @@ A aplicação deverá:
 - adaptar a mensagem do usuário para cada livro, com o objetivo de gerar uma resposta com base em sua personalidade/gênero e conhecimento;
 - A aplicação deve informar à usuária sobre os erros que possam surgir ao interagir com a API, como atingir a cota de tokens por minuto ou qualquer outro erro relacionado à API. Deve ser fornecida uma descrição clara da causa do problema e possíveis soluções.
 
-![img](./src/data/assets/gif.gif) //SUBSTITUIR PELO GIF DO CHAT
+![chatGIF](https://github.com/marcelereis/SAP012-dataverse-chat/assets/152895146/54ade158-13fa-4afa-8e50-03b1ab7d6e38)
 
 ## 4. Protótipo 
 
 Com o auxílio do Figma, elaboramos um protótipo de alta fidelidade do site, enfatizando um design limpo, cores suaves e uma clara hierarquia de informações para facilitar a leitura dos usuários.
 
-<img src="https://imgur.com/zAoG9Hy.png"> //SUBSTITUIR PELO GIF DO FIGMA
+![FigmaPrototipo](https://github.com/marcelereis/SAP012-dataverse-chat/assets/152895146/1d9b2eed-10b6-4907-b3f9-e80d0be41c6a) 
 
 
 ## 5. Objetivos de aprendizagem
