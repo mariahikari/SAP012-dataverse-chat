@@ -68,6 +68,21 @@ export const Chat = () => {
     
   };
 
+
+
+  const showError = (errorMessage) => {
+    const errorEl = document.createElement("div");
+    errorEl.classList.add("errorPage");
+    errorEl.textContent = errorMessage;
+
+    setTimeout(() => {
+      conversationArea.removeChild(errorEl);
+    }, 3000);
+
+    const conversationArea = el.querySelector("#conversation");
+    conversationArea.appendChild(errorEl);
+  }
+
   const sendMessage = async () => {
     const messageInput = el.querySelector("#message");
     const message = messageInput.value.trim();
@@ -137,7 +152,7 @@ export const Chat = () => {
         // Removendo mensagem de "digitando..."
         conversationArea.removeChild(typingMessage);
         console.error("Erro ao comunicar com a API do OpenAI:", error);
-        
+        showError("Erro na comunicação com a API. Verifique a chave e tente novamente.");
       }
     }
   };
