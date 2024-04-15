@@ -33,7 +33,7 @@ O projeto foi desenvolvido pela mesma dupla do [Dataverse](https://mariahikari.g
 #### Deploy
 A aplicação foi publicada (ou _deployed_) para que as usuárias da web possam acessá-la.
 
-Foi utilizado o _Netlify_ para implantar o site: [Autoras em Foco](https://autoras-em-foco.netlify.app). 
+Foi utilizado o _Netlify_ para implantar o site: [Autoras em Foco](https://mhikari-dataverse-chat.netlify.app). 
 
 ## 2. Ferramentas utilizadas
 
