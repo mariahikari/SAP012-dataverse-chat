@@ -22,7 +22,7 @@
 
 }
 
-.livro_name {
+.livroName {
     font-weight: bold;
     font-size: 18px;
     text-align: center;
@@ -30,7 +30,7 @@
     margin-top: 10px;
 }
 
-.autora_name {
+.autoraName {
     /*Classe adicionada para o nome da autora se destacar das demais infos*/
     font-weight: bold;
     font-size: 13px;
