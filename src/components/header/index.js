@@ -21,12 +21,11 @@ export const header = () => {
     </nav>
     `;
 
-  // Adicionando evento de clique ao botão "API KEY" para abrir o modal
   const openModalBtn = headerEl.querySelector("#openModalBtn");
   openModalBtn.addEventListener("click", () => {
-    const open = modal(); // Criar o modal
-    document.body.appendChild(open); // Adicionar o modal ao corpo do documento
-    window.openModal(); // Abrir o modal
+    const open = modal(); 
+    document.body.appendChild(open); 
+    window.openModal(); 
   });
 
   return headerEl;

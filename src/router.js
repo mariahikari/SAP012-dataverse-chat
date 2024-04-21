@@ -1,11 +1,3 @@
-
-
-
-// setRootEl, setRoutes, renderView e onURLChange.
-
-// Considere escrever testes paralelos para cada função para entender melhor sua intenção.
-
-
 let ROUTES = {};
 let rootEl = null;
 
@@ -14,16 +6,6 @@ export const setRootEl = (el) => {
 }
 
 export const setRoutes = (routes) => {
-  // optional Throw errors if routes isn't an object:   
-  //if (typeof routes !== 'object') {
-  //throw new Error('Routes must be an object.');
-  //}
-
-  // optional Throw errors if routes doesn't define an /error route
-  //if (!routes['/error']) {
-  //throw new Error('Routes must define an /error route.');
-  //}
-
   ROUTES = routes;// assign ROUTES
 }
 
@@ -51,5 +33,3 @@ export const navigateTo = (pathName, props = {}) => {
   window.history.pushState({}, pathName, link);
   renderView(pathName, props);
 };
-
-// linkEl.addEventListener('click', () => navigationTo("/about", { nome: "Xochitl" }))
