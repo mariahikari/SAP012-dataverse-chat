@@ -2,6 +2,7 @@
     "env": {
       "browser": true,
       "es6": true,
+      "node": true, 
       "jest": true
     },
     "parserOptions": {
@@ -10,6 +11,9 @@
     },
     "extends": "eslint:recommended",
     "plugins": ["import"],
+    "globals": {
+      "testGlobal": true
+    },
     "rules": {
       "no-console": "warn",
       "import/extensions": 0,
